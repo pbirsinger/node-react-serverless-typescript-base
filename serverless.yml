@@ -17,7 +17,7 @@ provider:
 
 functions:
   hello:
-    handler: index.handler
+    handler: server/index.handler
     events:
       - http: ANY /
       - http: 'ANY {proxy+}'
