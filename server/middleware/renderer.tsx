@@ -1,13 +1,15 @@
+import * as React from "react";
+import * as ReactDOMServer from "react-dom/server";
+
 import * as fs from "fs";
+import { Request, Response } from "express";
 import * as path from "path";
-import React from "react";
-import ReactDOMServer from "react-dom/server";
 
 import App from "../../client/src/App";
 
-export default (req, res, next) => {
+export default (req: Request, res: Response) => {
   // point build index.html
-  const filePath = path.resolve("client", "./build", "index.html");
+  const filePath = path.resolve("client", "./public", "index.html");
 // read in html file
   fs.readFile(filePath, "utf8", (err, htmlData) => {
     if (err) {
