@@ -27,13 +27,13 @@ module.exports = {
   externals: [nodeExternals()],
   module: {
     rules: [
+      { test: /\.scss$/, use: ["style-loader", "css-loader", "fast-sass-loader"] },
       {
         test: /\.tsx?$/,
         loader: "ts-loader",
-        include: __dirname,
+        include: /server|client/,
         exclude: /node_modules/
       },
-      { test: /\.scss$/, use: ["css-loader", "fast-sass-loader"] },
       {
         test: /\.(png|jp(e*)g|svg)$/,
         use: [
@@ -49,7 +49,7 @@ module.exports = {
     ]
   },
   plugins: [
-    new CopyWebpackPlugin([{ from: "client/build", to: "build" }], {
+    new CopyWebpackPlugin([{ from: "client/build", to: "client" }], {
       debug: "info"
     })
   ]

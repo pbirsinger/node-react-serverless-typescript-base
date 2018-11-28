@@ -51,7 +51,6 @@
     "sass-loader": "7.1.0",
     "style-loader": "0.23.0",
     "terser-webpack-plugin": "1.1.0",
-    "tslint": "^5.11.0",
     "typescript": "3.1.6",
     "url-loader": "1.1.1",
     "webpack": "4.19.1",
@@ -67,6 +66,7 @@
   "eslintConfig": {
     "extends": "react-app"
   },
+  "homepage": "/dev",
   "browserslist": [
     ">0.2%",
     "not dead",
@@ -118,5 +118,8 @@
     "presets": [
       "react-app"
     ]
+  },
+  "devDependencies": {
+    "tslint": "^5.11.0"
   }
 }
