@@ -3,6 +3,7 @@ import * as path from 'path';
 import serverless from 'serverless-http';
 
 const app = express();
+app.set('port', 5000);
 
 app.use(express.static('client/build'));
 app.use(express.static('build'));
