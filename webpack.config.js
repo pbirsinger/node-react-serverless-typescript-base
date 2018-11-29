@@ -29,6 +29,16 @@ module.exports = {
     rules: [
       { test: /\.scss$/, use: ["style-loader", "css-loader", "fast-sass-loader"] },
       {
+        test: /\.ts$/,
+        enforce: 'pre',
+        use: [
+            {
+                loader: 'tslint-loader',
+                options: { /* Loader options go here */ }
+            }
+        ]
+      },
+      {
         test: /\.tsx?$/,
         loader: "ts-loader",
         include: /server|client/,
