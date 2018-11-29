@@ -49,7 +49,7 @@ module.exports = {
     ]
   },
   plugins: [
-    new CopyWebpackPlugin([{ from: "client/build", to: "client" }], {
+    new CopyWebpackPlugin([{ from: "client/build", to: "build" }], {
       debug: "info"
     })
   ]

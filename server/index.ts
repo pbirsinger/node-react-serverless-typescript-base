@@ -7,6 +7,7 @@ import renderer from "./middleware/renderer";
 const app = express();
 
 app.use(express.static("client/build"));
+app.use(express.static("build"));
 
 app.get('/', (req,res) => {
   const indexPath = path.resolve("client", "./build", "index.html");
