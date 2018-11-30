@@ -27,7 +27,6 @@ module.exports = {
   externals: [nodeExternals()],
   module: {
     rules: [
-      { test: /\.scss$/, use: ["style-loader", "css-loader", "fast-sass-loader"] },
       {
         test: /\.ts$/,
         enforce: 'pre',
@@ -41,8 +40,8 @@ module.exports = {
       {
         test: /\.tsx?$/,
         loader: "ts-loader",
-        include: /server|client/,
-        exclude: /node_modules/
+        include: /server/,
+        exclude: /node_modules|client/
       },
       {
         test: /\.(png|jp(e*)g|svg)$/,
