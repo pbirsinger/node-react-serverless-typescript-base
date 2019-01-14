@@ -1,5 +1,5 @@
 service:
-  name: fin-flash
+  name: dope-template
 
 custom:
   webpack:
@@ -15,6 +15,7 @@ provider:
   name: aws
   runtime: nodejs8.10
   stage: dev
+  profile: change-to-your-aws-profile
 
 functions:
   hello:
