@@ -13,4 +13,4 @@ app.get('/', (req, res) => {
   res.sendFile(indexPath);
 });
 
-export const handler = serverless(app);
+export const handler = serverless(app, { binary: ['image/*'] });

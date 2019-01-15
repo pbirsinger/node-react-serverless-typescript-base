@@ -1,3 +1,3 @@
 declare module 'serverless-http' {
-  export default function serverless(app: any): any;
+  export default function serverless(app: any, config: any): any;
 }
