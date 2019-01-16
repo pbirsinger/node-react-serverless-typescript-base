@@ -32,7 +32,7 @@ const App = ({ classes }: WithStyles<typeof styles>) => {
       <Flex column={true} align="center" justify="flex-start" style={{ paddingTop: 80 }}>
         <Typography key="header" variant="h4" color="inherit" className={classes.header}>
           Coming soon..
-        </Typography>,
+        </Typography>
       </Flex>
     </Flex>
   );
