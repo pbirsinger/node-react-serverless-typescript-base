@@ -8,3 +8,6 @@ jspm_packages
 # Build directories
 .webpack
 client/build
+
+# Mac folder stuff
+.DS_Store
