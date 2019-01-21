@@ -9,6 +9,7 @@
     "forceConsistentCasingInFileNames": true,
     // "module": "esnext",
     "moduleResolution": "node",
+    "noUnusedLocals": true,
     // "resolveJsonModule": true,
     // "outDir": ".builddd",
     // "lib": ["es2015", "dom", "esnext"],

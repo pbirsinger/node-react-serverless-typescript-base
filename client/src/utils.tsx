@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { CSSProperties, HTMLAttributes, SFC } from 'react';
+import { CSSProperties, SFC } from 'react';
 
 export interface IFlexProps extends React.HTMLAttributes<HTMLDivElement> {
   align?: CSSProperties['alignItems'];

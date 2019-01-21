@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import { AppBar, CircularProgress, IconButton, Toolbar, Typography, WithStyles } from '@material-ui/core';
+import { AppBar, IconButton, Toolbar, Typography, WithStyles } from '@material-ui/core';
 import { createStyles, withStyles } from '@material-ui/core/styles';
 import MenuIcon from '@material-ui/icons/Menu';
 
