@@ -26,7 +26,7 @@
     "concurrently": "^4.1.0",
     "copy-webpack-plugin": "^4.6.0",
     "node": "^11.13.0",
-    "node-sass": "^4.10.0",
+    "node-sass": "^4.13.1",
     "serverless": "^1.40.0",
     "serverless-offline": "^3.31.3",
     "serverless-plugin-typescript": "^1.1.5",
