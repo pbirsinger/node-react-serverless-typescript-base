@@ -12,7 +12,7 @@
     "deploy": "npm run build --prefix client && NODE_ENV=production sls deploy -v"
   },
   "dependencies": {
-    "express": "^4.16.4",
+    "express": "^4.17.3",
     "path": "^0.12.7",
     "serverless-apigw-binary": "^0.4.4",
     "serverless-http": "^1.8.0"
